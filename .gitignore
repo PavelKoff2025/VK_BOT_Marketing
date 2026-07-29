@@ -1,0 +1,32 @@
+# Virtual environment
+venv/
+.venv/
+
+# Secrets
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime data (personal dialogs / reports)
+users/*.json
+users/*.json.bak
+users/*.json.tmp
+reports/*.pdf
+.vkbottle/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Keep placeholders
+!users/.gitkeep
+!reports/.gitkeep
