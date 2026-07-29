@@ -1,32 +1,49 @@
 # Virtual environment
 venv/
 .venv/
+env/
 
-# Secrets
+# Secrets — never commit
 .env
-.env.local
+.env.*
+!.env.example
 *.pem
+credentials.json
+service-account*.json
 
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
+.eggs/
+dist/
+build/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
-# Runtime data (personal dialogs / reports)
+# Runtime data (dialogs / reports / VKBottle cache)
 users/*.json
 users/*.json.bak
 users/*.json.tmp
 reports/*.pdf
 .vkbottle/
+*.log
 
-# OS / IDE
+# OS / IDE / Cursor
 .DS_Store
+Thumbs.db
 .idea/
 .vscode/
+*.swp
+*.swo
+.cursor/
 
-# Keep placeholders
+# Keep placeholders in empty dirs
 !users/.gitkeep
 !reports/.gitkeep
